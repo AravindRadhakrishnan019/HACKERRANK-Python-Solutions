@@ -1,0 +1,19 @@
+def minion_game(string):
+    c1=0;c2=0
+    L1=[]
+    vowels="AEIOU"
+    for i in range (0,len(string)):
+        if string[i] in vowels:
+            c1=c1+(len(string)-i)
+        else:
+            c2=c2+(len(string)-i)
+    
+    if c2>c1:
+        print("Stuart",c2)
+    elif c2==c1:
+        print("Draw")
+    else:
+        print("Kevin",c1)
+        
+    
+    # your code goes here
